@@ -10,10 +10,14 @@ img {
   width: 100%;
 }
 
+li {
+  margin-bottom: 8px;
+}
+
 .button {
   background: #0d4c80;
   color: #fff;
-  font-size: .8em;
+  font-size: .9em;
   text-transform: uppercase;
   text-align: center;
   padding: 1.5em 1em;
@@ -71,7 +75,8 @@ header a#logo {
 }
 
 #swiss-cow {
-  padding: 0px 2em;
+  padding-top: 40px;
+  padding-left: 20px;
 }
 
 footer {
@@ -113,7 +118,7 @@ footer p {
 a.button {
   width: 100%;
   position: absolute;
-  top:-80px; 
+  top: -86px; 
 }
 
 .txt-right {

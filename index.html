@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Welcome to kuh-air-rechnung.ch</title>
-<meta name="description" content="This site is currently under construction.">
-<meta name="generator" content="hosting-page-builder">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="og:url" content="http://kuh-air-rechnung.ch/index.html">
-<meta name="og:locale" content="fr">
-<meta name="og:type" content="website">
-<meta name="og:title" content="kuh-air-rechnung.ch |">
-<meta name="og:description" content="">
-<meta name="og:updated_time" content="1510217191">
-<link rel="stylesheet" href="//static.sharedbox.com/assets/font-awesome/4.3.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
-
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Die QR-Rechnung aus Sicht eines Softwareentwicklers</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://static.sharedbox.com/assets/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="container">
-  <header>
-        <h1>Nulla dui purus / Vestibulum nec ligula et lorem</h1>
-<!--
-    <a href="http://www.cresus.ch/" id="logo" title="visitez notre site">
-      <h1>Crésus</h1>
-      <h2>les logicels de gestion</h2>
-      <img src="images/cresus-logo.svg" alt="Crésus" />
-    </a>
--->
-  </header>
-  <div class="content">
-    <div class="row">
-      <div class="colonne w50">
-        <p>Nulla dui purus, eleifend vel, consequat non, dictum porta, nulla. Duis ante mi, laoreet ut, commodo eleifend, cursus nec</p>
-        <p>Vestibulum accumsan eros nec magna. Vestibulum vitae dui. Vestibulum nec ligula et lorem consequat ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
-        <br />
+  <div id="container">
+    <header>
+      <h1>Die QR-Rechnung aus Sicht eines Softwareentwicklers</h1>
+    </header>
+    <div class="content">
+      <div class="row">
+        <div class="colonne w50">
+          <p>
+            Die QR-Rechnung (Aussprache <i>Kuh-Air-Bill</i>) enthält einen
+            Einzahlungsschein, der mit einem QR-Code versehen ist.
+          </p>
+          <p>
+            Die <b>Spezifikationen</b> dazu sind in mehreren Dokumenten der SIX aufgeteilt:
+          </p>
+          <ul>
+            <li><a href="https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-de.pdf" target="_blank">Schweizer Implementation Guidelines QR-Rechnung</a>.</li>
+            <li><a href="https://www.six-interbank-clearing.com/dam/downloads/de/standardization/iso/swiss-recommendations/implementation-guidelines-ct.pdf" target="_blank">Schweizer Implementation Guidelines für Kunde-Bank-Meldungen für Überweisungen im Zahlungsverkehr (pain.001)</a>.</li>
+          </ul>
+          <p>
+            Die <b>Syntax der Rechnungstellerdaten</b> (##S1) wird von der Swico definiert. Diese Daten
+            sind für die Software des Rechnungsempfänger wichtig: sie ergänzen den QR-Code
+            mit nützlichen Informationen zur Rechnung und MWST.
+          </p>
+        </div>
+        <div class="colonne w50">
+          <img src="images/swiss-cow.svg" alt="Kuh-Air-Bill" title="Schweizer Kuh mit QR-Code" id="swiss-cow" />
+        </div>
+        <div class="clearfix"></div>
       </div>
-      <div class="colonne w50">
-        <img src="images/swiss-cow.svg" alt="The swiss cows say MHEUUUUUUU" title="The swiss cows say MHEUUUUUUU" id="swiss-cow" />
+      <div class="row">
+        <div class="colonne w50" style="position: relative;">
+          <a href="downloads/Swico_Strukturierte-Referenz_Syntaxdefinition_V1_1_DE.pdf" target="_blank" class="button" title="Download der ##S1 Syntaxdefinition (PDF)"><i class="fa fa-angle-down" aria-hidden="true"></i>Download der ##S1 Syntaxdefinition V1.1</a>
+        </div>
+        <div class="colonne w50">
+        </div>
+        <div class="clearfix"></div>
       </div>
-      <div class="clearfix"></div>
-    </div>
-    <div class="row">
-      <div class="colonne w50" style="position: relative;">
-        <a href="fr.pdf" target="_blank" class="button" title="télécharger en français [.pdf]"><i class="fa fa-angle-down" aria-hidden="true"></i> télécharger en français [.pdf]</a>
+      <div class="row">
+        <p>
+          Achtung, der <b>Anhang B: Überschriften mehrsprachig</b> der IG V1.0 (27.04.2017) enthält
+          noch Übersetzungsfehler.
+          <br/>
+          <br/>
+          &nbsp;
+        </p>
       </div>
-      <div class="colonne w50">
+      <div class="row">
+          <p>
+            Weitere Links:
+            <a href="https://www.six-interbank-clearing.com/en/home/standardization/ebics.html" target="_blank">EBICS Swiss Recommendations</a> |
+            <a href="downloads/EBICS-INI-Letter-Proposal_V0_1.pdf" target="_blank">EBICS INI-Procedure (Proposal)</a> |
+            <a href="downloads/EBICS-INI-Letter_Example_V0_1.pdf" target="_blank">EBICS INI-Letter (Example)</a>
+          </p>
+        </div>
+        <footer>
+      <div class="row">
+        <div class="colonne w50">
+          <p>Copyright © 2017 – Pierre Arnaud, Epsitec SA, Yverdon-les-Bains</p>
+        </div>
+        <div class="colonne w50 txt-right">
+          <a href="http://www.facture-qr.ch" style="background: #ccc; padding: .5em; color: #fff; border-radius: 2px;">FR</a>
+          <a href="#" style="background: #0d4c80; padding: .5em; color: #fff; border-radius: 2px;">DE</a>
+        </div>
+        <div class="clearfix"></div>
       </div>
-      <div class="clearfix"></div>
-    </div>
-
-    
+    </footer>  
   </div>
-  <footer>
-    <div class="row">
-      <div class="colonne w50">
-        <p>Copyright © 2017</p>
-      </div>
-      <div class="colonne w50 txt-right">
-        <a href="#" style="background: #ccc; padding: .5em; color: #fff; border-radius: 2px;">DE</a>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-    
-  </footer>  
-</div>
 </body>
 </html>
