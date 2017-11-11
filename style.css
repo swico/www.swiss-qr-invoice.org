@@ -1,0 +1,132 @@
+* {
+   box-sizing: border-box;
+}
+
+.clearfix {
+  clear: both;
+}
+
+img {
+  width: 100%;
+}
+
+.button {
+  background: #0d4c80;
+  color: #fff;
+  font-size: .8em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5em 1em;
+  border-radius: 2px;
+  display: block;
+}
+
+.button i {
+  margin-right: 20px;
+}
+
+a:link, a:focus, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+body {
+  background: #f0f0f0;
+  padding: 0px;
+  margin: 0px;
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+  background: #fafafa;
+  margin: 10px;
+  max-width: 960px;
+  padding: 20px 40px 20px 40px;
+  border: 1px solid #eee;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+  border-radius: 3px;
+}
+
+#container .content {
+  margin-top: 20px;
+}
+
+header {
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+header a#logo {
+  display: inline-block;
+  width: 200px;
+  margin: 0px 0px 20px 20px;
+}
+
+.row .w50 {
+  width: 100%
+}
+
+#swiss-cow {
+  padding: 0px 2em;
+}
+
+footer {
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  font-size: .75em;
+  padding: 20px 20px;
+}
+
+footer .row .w50 {
+  text-align: center;
+}
+
+footer p {
+  color: #ccc;
+  margin: 20px;
+}
+
+.txt-right {
+  text-align: center;
+}
+
+
+/* Medium and up */
+@media screen and (min-width: 960px) {
+  
+#container {
+  margin: 40px auto;
+}
+
+.row .colonne {
+  float: left;
+}
+  
+.row .w50 {
+  width: 50%
+}
+
+a.button {
+  width: 100%;
+  position: absolute;
+  top:-80px; 
+}
+
+.txt-right {
+  text-align: right !important;
+}
+
+footer .row .w50 {
+  text-align: left;
+}
+
+
+footer p {
+  margin: 0px;
+}
+  
+}
