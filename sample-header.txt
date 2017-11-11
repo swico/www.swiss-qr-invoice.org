@@ -1,0 +1,7 @@
+<!--
+    <a href="http://www.cresus.ch/" id="logo" title="visitez notre site">
+      <h1>Crésus</h1>
+      <h2>les logicels de gestion</h2>
+      <img src="images/cresus-logo.svg" alt="Crésus" />
+    </a>
+-->
