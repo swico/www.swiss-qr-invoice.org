@@ -42,7 +42,7 @@ body {
   padding: 0px;
   margin: 0px;
   color: #222;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Segoe UI', 'Open Sans', sans-serif;
 }
 
 #container {
@@ -70,12 +70,16 @@ header a#logo {
   margin: 0px 0px 20px 20px;
 }
 
+h2 {
+  font-size: 1.3em;
+}
+
 .row .w50 {
   width: 100%
 }
 
 #swiss-cow {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-left: 20px;
 }
 
@@ -101,37 +105,34 @@ footer p {
 
 
 /* Medium and up */
-@media screen and (min-width: 960px) {
-  
-#container {
-  margin: 40px auto;
-}
+@media screen and (min-width: 800px) {
+    
+  #container {
+    margin: 40px auto;
+  }
 
-.row .colonne {
-  float: left;
-}
-  
-.row .w50 {
-  width: 50%
-}
+  .row .colonne {
+    float: left;
+  }
+    
+  .row .w50 {
+    width: 50%
+  }
 
-a.button {
-  width: 100%;
-  position: absolute;
-  top: -86px; 
-}
+  a.button {
+    width: 25em;
+    display: inline-block;
+  }
 
-.txt-right {
-  text-align: right !important;
-}
+  .txt-right {
+    text-align: right !important;
+  }
 
-footer .row .w50 {
-  text-align: left;
-}
+  footer .row .w50 {
+    text-align: left;
+  }
 
-
-footer p {
-  margin: 0px;
-}
-  
+  footer p {
+    margin: 0px;
+  }
 }

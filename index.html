@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="de">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -21,16 +21,23 @@
             Einzahlungsschein, der mit einem QR-Code versehen ist.
           </p>
           <p>
-            Die <b>Spezifikationen</b> dazu sind in mehreren Dokumenten der SIX aufgeteilt:
+            Ziel von <a href="//www.swiss-qr-invoice.org">www.swiss-qr-invoice.org</a>
+            ist es, Information zur Erstellung und Validierung der QR-Rechnung der Schweizer
+            Entwicklergemeinde zur Verfügung zu stellen.
+          </p>
+          <h2>Spezifikationen der SIX</h2>
+          <p>
+            Die <b>Spezifikationen</b> (Version 2 &ndash; 15.11.2018) sind in mehreren
+            Dokumenten der SIX aufgeteilt:
           </p>
           <ul>
             <li><a href="https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-de.pdf" target="_blank">Schweizer Implementation Guidelines QR-Rechnung</a>.</li>
+            <li><a href="https://www.paymentstandards.ch/dam/downloads/processing-rules-de.pdf" target="_blank">Verarbeitungsregeln QR-Rechnung</a>.</li>
+            <li><a href="https://www.paymentstandards.ch/dam/downloads/qr-iid_qr-iban-de.pdf" target="_blank">Fachliche Informationen zur QR-IID und QR-IBAN</a>.</li>
             <li><a href="https://www.six-interbank-clearing.com/dam/downloads/de/standardization/iso/swiss-recommendations/implementation-guidelines-ct.pdf" target="_blank">Schweizer Implementation Guidelines für Kunde-Bank-Meldungen für Überweisungen im Zahlungsverkehr (pain.001)</a>.</li>
           </ul>
           <p>
-            Die <b>Syntax der Rechnungsstellerzusatzinformationen</b> (##S1) wird von SWICO definiert.
-            Diese ergänzt die üblichen Zahlungsinformationen und ermöglicht der Business Software des
-            Rechnungsempfängers die Zuordnung und Prüfung der Rechnung zu automatisieren.
+            Sie stehen auf <a href="https://www.paymentstandards.ch">www.paymentstandards.ch</a> im <a href="https://www.paymentstandards.ch/de/shared/downloads.html">Download Center</a> zur Verfügung.
           </p>
         </div>
         <div class="colonne w50">
@@ -39,17 +46,30 @@
         <div class="clearfix"></div>
       </div>
       <div class="row">
-        <div class="colonne w50" style="position: relative;">
-          <a href="downloads/Swico_Strukturierte-Referenz_Syntaxdefinition_V1_1_DE.pdf" target="_blank" class="button" title="Download der ##S1 Syntaxdefinition (PDF)"><i class="fa fa-angle-down" aria-hidden="true"></i>Download der ##S1 Syntaxdefinition V1.1</a>
-        </div>
-        <div class="colonne w50">
-        </div>
-        <div class="clearfix"></div>
-      </div>
-      <div class="row">
         <p>
-          Achtung, der <b>Anhang B: Überschriften mehrsprachig</b> der IG V1.0 (27.04.2017) enthält
-          noch Übersetzungsfehler.
+          <h2>Zusätzliche strukturierte Rechnungsinformationen</h2>
+          <p>
+            Das Feld <b>Rechnungsinformationen</b> ergänzt die üblichen Zahlungsinformationen
+            und ermöglicht der Business Software des Rechnungsempfängers die Zuordnung und Prüfung
+            der Rechnung zu automatisieren. Es ermöglicht auch, dass eine E-Banking Applikation
+            dem User eine sinnvolle Zahlungsfrist vorschlagen kann.
+          </p>
+          <ul>
+            <li><a href="downloads/qr-bill-s1-syntax-de.pdf" target="_blank">Syntaxdefinition der Rechnungsinformationen (S1)</a>.</li>
+          </ul>
+          <p>
+            Die Syntax der Rechnungsinformationen (S1) wird von der Arbeitsgruppe ERP der <a href="https://www.swico.ch/">Swico</a>
+            definiert und gepflegt.<br/>
+            Den <a href="validator/?lang=de">Validator</a> stellt Ihnen die Swico zur Verfügung.
+          </p>
+          <a href="downloads/qr-bill-s1-syntax-de.pdf" class="button" target="_blank"
+             title="Syntaxdefinition der Rechnungsinformationen (S1).">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            Download Syntaxdefinition (S1)<br/>Version 1.2
+          </a>
+          <a href="validator/?lang=de" class="button"
+             title="Validator für QR-Rechnung und zusätzlichen Rechnungsinformationen.">
+            QR-Rechnung und Rechnungsinformationen validieren</a>
           <br/>
           <br/>
           &nbsp;
@@ -66,7 +86,7 @@
         <footer>
       <div class="row">
         <div class="colonne w50">
-          <p>Copyright © 2017 – Pierre Arnaud, Epsitec SA, Yverdon-les-Bains</p>
+          <p>Copyright © 2017-2018 – Pierre Arnaud, Epsitec SA, Yverdon-les-Bains</p>
         </div>
         <div class="colonne w50 txt-right">
           <a href="http://www.facture-qr.ch" style="background: #0d4c80; padding: .5em; color: #fff; border-radius: 2px;">FR</a>
