@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Die QR-Rechnung aus Sicht eines Softwareentwicklers</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="https://static.sharedbox.com/assets/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -10,11 +11,12 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-446301-7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-446301-7');
   </script>
 </head>
+
 <body>
   <div id="container">
     <header>
@@ -38,14 +40,21 @@
             Dokumenten der SIX aufgeteilt:
           </p>
           <ul>
-            <li><a href="https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-de.pdf" target="_blank">Schweizer Implementation Guidelines QR-Rechnung</a>.</li>
-            <li><a href="https://www.paymentstandards.ch/dam/downloads/processing-rules-de.pdf" target="_blank">Verarbeitungsregeln QR-Rechnung</a>.</li>
-            <li><a href="https://www.paymentstandards.ch/dam/downloads/qr-iid_qr-iban-de.pdf" target="_blank">Fachliche Informationen zur QR-IID und QR-IBAN</a>.</li>
-            <li><a href="https://www.six-interbank-clearing.com/dam/downloads/de/standardization/iso/swiss-recommendations/implementation-guidelines-ct.pdf" target="_blank">Schweizer Implementation Guidelines für Kunde-Bank-Meldungen für Überweisungen im Zahlungsverkehr (pain.001)</a>.</li>
-            <li><a href="https://www.ebill.ch/dam/downloads/specifications/d0482-de-01-spezifikationzur-nutzung-des-alternativen-verfahrens-ebill.pdf" target="_blank">Spezifikation zur Nutzung des Alternativen Verfahrens eBill im Swiss QR Code</a>.</li>
+            <li><a href="https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-de.pdf" target="_blank">Schweizer
+                Implementation Guidelines QR-Rechnung</a>.</li>
+            <li><a href="https://www.paymentstandards.ch/dam/downloads/processing-rules-de.pdf" target="_blank">Verarbeitungsregeln
+                QR-Rechnung</a>.</li>
+            <li><a href="https://www.paymentstandards.ch/dam/downloads/qr-iid_qr-iban-de.pdf" target="_blank">Fachliche
+                Informationen zur QR-IID und QR-IBAN</a>.</li>
+            <li><a href="https://www.six-interbank-clearing.com/dam/downloads/de/standardization/iso/swiss-recommendations/implementation-guidelines-ct.pdf"
+                target="_blank">Schweizer Implementation Guidelines für Kunde-Bank-Meldungen für Überweisungen im
+                Zahlungsverkehr (pain.001)</a>.</li>
+            <li><a href="https://www.ebill.ch/dam/downloads/specifications/d0482-de-01-spezifikationzur-nutzung-des-alternativen-verfahrens-ebill.pdf"
+                target="_blank">Spezifikation zur Nutzung des Alternativen Verfahrens eBill im Swiss QR Code</a>.</li>
           </ul>
           <p>
-            Sie stehen auf <a href="https://www.paymentstandards.ch">www.paymentstandards.ch</a> im <a href="https://www.paymentstandards.ch/de/shared/downloads.html">Download Center</a> zur Verfügung.
+            Sie stehen auf <a href="https://www.paymentstandards.ch">www.paymentstandards.ch</a> im <a href="https://www.paymentstandards.ch/de/shared/downloads.html">Download
+              Center</a> zur Verfügung.
             Zusätzliche Informationen auch auf <a href="https://www.ebill.ch/de/home/network-partners.html#qr">ebill.ch</a>.
           </p>
         </div>
@@ -64,21 +73,24 @@
             dem User eine sinnvolle Zahlungsfrist vorschlagen kann.
           </p>
           <ul>
-            <li><a href="/downloads/qr-bill-s1-syntax-de.pdf" target="_blank">Syntaxdefinition der Rechnungsinformationen (S1)</a>.</li>
+            <li><a href="/downloads/qr-bill-s1-syntax-de.pdf" target="_blank">Syntaxdefinition der
+                Rechnungsinformationen (S1)</a>.</li>
           </ul>
           <p>
             Die Syntax der Rechnungsinformationen (S1) wird von der Arbeitsgruppe ERP der <a href="https://www.swico.ch/">Swico</a>
-            definiert und gepflegt.<br/>
+            definiert und gepflegt.<br />
             Den <a href="/validator/?lang=de">Validator</a> stellt Ihnen die Swico zur Verfügung.
           </p>
-          <a href="/downloads/qr-bill-s1-syntax-de.pdf" class="button" target="_blank"
-             title="Syntaxdefinition der Rechnungsinformationen (S1).">
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
-            Download Syntaxdefinition (S1)<br/>Version 1.2
-          </a>
-          <a href="/validator/?lang=de" class="button"
-             title="Validator für QR-Rechnung und zusätzlichen Rechnungsinformationen.">
-            QR-Rechnung und Rechnungsinformationen validieren</a>
+          <div class="wrap">
+            <a href="/downloads/qr-bill-s1-syntax-de.pdf" class="button" target="_blank" style="flex-grow:1; margin-right: 10px"
+              title="Syntaxdefinition der Rechnungsinformationen (S1).">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+              Download Syntaxdefinition (S1)<br />Version 1.2
+            </a>
+            <a href="/validator/?lang=de" class="button" style="flex-grow:1; margin-left: 10px" title="Validator für QR-Rechnung und zusätzlichen Rechnungsinformationen.">
+              QR-Rechnung und Rechnungsinformationen validieren
+            </a>
+          </div>
         </p>
         <h2>GitHub</h2>
         <p>
@@ -89,25 +101,37 @@
         </p>
       </div>
       <div class="row">
-          <p>
-            Weitere Links:
-            <a href="https://www.six-interbank-clearing.com/en/home/standardization/ebics.html" target="_blank">EBICS Swiss Recommendations</a> |
-            <a href="/downloads/EBICS-INI-Letter-Proposal_V0_1.pdf" target="_blank">EBICS INI-Procedure (Proposal)</a> |
-            <a href="/downloads/EBICS-INI-Letter_Example_V0_1.pdf" target="_blank">EBICS INI-Letter (Example)</a>
-          </p>
+        <h2>Weitere Informationen</h2>
+        <div class="wrap">
+          <a href="https://www.six-group.com/interbank-clearing/dam/downloads/de/clearit/76/edition.pdf#page=18" target="_blank"
+            style="flex-grow: 1; background: #eee; padding: 1em;">
+            <img src="/images/clearit-76-de.png" />
+          </a>
+          <span style="flex-grow: 1; background: #eee; padding: 1em; min-width: 50% "></span>
         </div>
-        <footer>
-      <div class="row">
-        <div class="colonne w50">
-          <p>Copyright © 2017-2018 – Pierre Arnaud, Epsitec SA, Yverdon-les-Bains</p>
-        </div>
-        <div class="colonne w50 txt-right">
-          <a href="/fr" style="background: #0d4c80; padding: .5em; color: #fff; border-radius: 2px;">FR</a>
-          <a href="/de" style="background: #cccccc; padding: .5em; color: #fff; border-radius: 2px;">DE</a>
-        </div>
-        <div class="clearfix"></div>
       </div>
-    </footer>  
-  </div>
+      <div class="row">
+        <p>
+          Weitere Links:
+          <a href="https://www.six-interbank-clearing.com/en/home/standardization/ebics.html" target="_blank">EBICS
+            Swiss Recommendations</a> |
+          <a href="/downloads/EBICS-INI-Letter-Proposal_V0_1.pdf" target="_blank">EBICS INI-Procedure (Proposal)</a> |
+          <a href="/downloads/EBICS-INI-Letter_Example_V0_1.pdf" target="_blank">EBICS INI-Letter (Example)</a>
+        </p>
+      </div>
+      <footer>
+        <div class="row">
+          <div class="colonne w50">
+            <p>Copyright © 2017-2018 – Pierre Arnaud, Epsitec SA, Yverdon-les-Bains</p>
+          </div>
+          <div class="colonne w50 txt-right">
+            <a href="/fr" style="background: #0d4c80; padding: .5em; color: #fff; border-radius: 2px;">FR</a>
+            <a href="/de" style="background: #cccccc; padding: .5em; color: #fff; border-radius: 2px;">DE</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </footer>
+    </div>
 </body>
+
 </html>

@@ -103,6 +103,9 @@ footer p {
   text-align: center;
 }
 
+.wrap {
+  display: flex;
+}
 
 /* Medium and up */
 @media screen and (min-width: 800px) {
