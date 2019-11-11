@@ -2,6 +2,10 @@
 
 This repository contains the source of the Website for the _Swiss QR Invoice_ organization.
 
+## Issues
+
+Pleas use the _issues_ in this repository to discuss the implementation of the QR-bill.
+
 ## Other resources
 
 * [Validator](https://github.com/epsitec-sa/facture-qr) written in elm and used by the
